@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.welcome-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  animation: fadeIn 1.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.welcome-card {
+  background: #fff;
+  border-radius: 36px;
+  box-shadow: 0 8px 32px rgba(231,76,60,0.13), 0 0 0 6px #ffe0c1;
+  padding: 52px 32px 42px 32px;
+  max-width: 370px;
+  width: 92vw;
+  text-align: center;
+  border: 3px solid #f9b234;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-card::before {
+  content: "🍕";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.8rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px #ffd9a0;
+  padding: 0.3em 0.6em;
+}
+
+.welcome-title {
+  color: #e67e22;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+}
+
+.welcome-desc {
+  color: #6b4f28;
+  font-size: 1.18rem;
+  margin-bottom: 26px;
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+}
+
+.welcome-img {
+  width: 135px;
+  margin-bottom: 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(255, 140, 0, 0.13);
+  background: #fff8f0;
+}
+
+.welcome-btn {
+  background: linear-gradient(90deg, #f9b234 60%, #f39c12 100%);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 0;
+  width: 100%;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 12px rgba(243,156,18,0.18);
+  margin-top: 12px;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.welcome-btn:hover {
+  background: linear-gradient(90deg, #f39c12 60%, #e67e22 100%);
+  transform: scale(1.04);
+}
