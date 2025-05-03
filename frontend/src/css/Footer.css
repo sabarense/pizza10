@@ -1,0 +1,14 @@
+.app-footer {
+  background: #ffe0b2; /* amarelo/bege claro, suave e aconchegante */
+  color: #b40614;      /* vermelho escuro para texto, ótimo contraste e tema pizza */
+  text-align: center;
+  padding: 1.2em 0;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  letter-spacing: 1px;
+  margin-top: auto;
+  box-shadow: 0 -2px 8px rgba(207,181,79,0.09); /* dourado suave */
+  border-top: 2px solid #ffd180; /* linha sutil para separar */
+}
