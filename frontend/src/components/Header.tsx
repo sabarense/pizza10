@@ -4,9 +4,6 @@ import "../css/Header.css";
 
 const Header: React.FC = () => (
   <header className="app-header">
-    <div className="app-header__logo">
-      <img src="/pizza-banner.jpg" alt="Logo Pizza10" />
-    </div>
     <nav className="app-header__nav">
       <Link to="/home">Home</Link>
       <Link to="/pizza-config">Montar Pedido</Link>
