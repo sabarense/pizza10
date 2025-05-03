@@ -1,0 +1,111 @@
+.home-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fffbe6 0%, #ffe0b2 60%, #ffd180 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.home-card {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 6px 28px rgba(207,181,79,0.11);
+  padding: 40px 24px 30px 24px;
+  max-width: 370px;
+  width: 94vw;
+  text-align: center;
+  border: 2.5px solid #ffe0b2;
+  margin: 0 auto;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.home-title {
+  color: #222;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.home-title-accent {
+  color: #e67e22;
+}
+
+.home-desc {
+  color: #6b4f28;
+  font-size: 1.08rem;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.home-banner-img {
+  width: 110px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(255, 140, 0, 0.13);
+  background: #fff8f0;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.home-action-btn {
+  width: 100%;
+  font-size: 1.08rem;
+  padding: 13px 0;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.home-btn-yellow {
+  background: #f9b234;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(243,156,18,0.13);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.home-btn-yellow:hover {
+  background: #e67e22;
+  transform: scale(1.03);
+}
+
+.home-btn-red {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(231,76,60,0.13);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.home-btn-red:hover {
+  background: #b40614;
+  transform: scale(1.03);
+}
+
+.home-promo {
+  margin: 18px 0 10px 0;
+  color: #e67e22;
+  background: #fff8e1;
+  border-radius: 8px;
+  padding: 7px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.home-footer {
+  margin-top: 18px;
+  color: #a67c52;
+  font-size: 15px;
+}
