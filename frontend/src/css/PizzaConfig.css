@@ -1,0 +1,111 @@
+.pizza-config-root {
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(230, 126, 34, 0.12);
+  padding: 36px 28px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.pizza-config-title {
+  color: #d35400;
+  font-size: 2rem;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.pizza-config-section {
+  margin-bottom: 28px;
+}
+
+.pizza-config-label {
+  font-weight: 600;
+  color: #e67e22;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.pizza-config-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e67e22;
+  margin-top: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.pizza-config-sabores-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.pizza-config-sabor-item {
+  position: relative;
+  background: #fff8e1;
+  border-radius: 16px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffe0b2;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e67e22;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(243,156,18,0.10);
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  min-width: 120px;
+  justify-content: center;
+  user-select: none;
+  flex: 1 1 120px; /* Cresce e ocupa espaço igualmente, mas mantém tamanho mínimo */
+  max-width: 180px;
+}
+
+/* Esconde o checkbox padrão */
+.pizza-config-sabor-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Visual de selecionado */
+.pizza-config-sabor-item.selected {
+  background: #ffe5c0;
+  border: 2px solid #e67e22;
+  color: #b40614;
+  box-shadow: 0 4px 16px rgba(230, 126, 34, 0.10);
+}
+
+/* Adiciona um check visual ao sabor selecionado */
+.pizza-config-sabor-item.selected::after {
+  content: "✔";
+  color: #e67e22;
+  font-size: 1.1em;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.pizza-config-btn {
+  width: 100%;
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s;
+}
+
+.pizza-config-btn:disabled {
+  background: #f8cfa5;
+  cursor: not-allowed;
+}
