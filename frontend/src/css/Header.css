@@ -1,0 +1,44 @@
+.app-header {
+  background: #fffbe6; /* Bege claro, igual ao início do body */
+  color: #2d2d2d;
+  padding: 0.5em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(207, 181, 79, 0.11); /* dourado suave */
+  border-bottom: 2px solid #ffe0b2; /* linha sutil para separar */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e67e22; /* laranja queimado para destaque */
+}
+
+.app-header__logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffe0b2;
+  box-shadow: 0 2px 8px rgba(243,156,18,0.10);
+}
+
+.app-header__nav a {
+  color: #e67e22;
+  margin-left: 2em;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.app-header__nav a:hover {
+  color: #b40614; /* Vermelho escuro para hover */
+}
