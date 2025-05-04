@@ -1,0 +1,52 @@
+.payment-root {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff9e5;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+  }
+  
+  .payment-title {
+    color: #d35400;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .checkout-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s;
+  }
+  
+  .checkout-btn:disabled {
+    background: #b2dfb2;
+    cursor: not-allowed;
+  }
+  
+  .payment-error {
+    color: #e74c3c;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .payment-success {
+    color: #27ae60;
+    font-weight: 600;
+    text-align: center;
+  }
+  
