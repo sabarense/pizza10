@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import "../css/Register.css"; 
 
 type RegisterForm = {
@@ -19,14 +20,27 @@ const Register: React.FC = () => {
     endereco: "",
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/clientes", form);
-    alert("Cadastro realizado!");
+    try {
+      await axios.post("http://localhost:5000/api/customers/", form, {
+        headers: { "Content-Type": "application/json" }
+      });
+      alert("Cadastro realizado! Faça login para acessar sua conta.");
+      navigate("/login"); // Redireciona para a página de login
+    } catch (error: any) {
+      if (error.response && error.response.data && error.response.data.error) {
+        alert("Erro: " + error.response.data.error);
+      } else {
+        alert("Erro ao cadastrar. Tente novamente.");
+      }
+    }
   };
 
   return (
@@ -58,7 +72,7 @@ const Register: React.FC = () => {
           onChange={handleChange}
           required
         />
-         <input
+        <input
           className="register-input"
           name="telefone"
           placeholder="Telefone"
@@ -74,7 +88,6 @@ const Register: React.FC = () => {
           onChange={handleChange}
           required
         />
-        {/* Aqui você pode integrar um componente de mapa futuramente */}
         <button className="register-btn" type="submit">
           Cadastrar
         </button>
