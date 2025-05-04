@@ -27,15 +27,33 @@ const Header: React.FC = () => {
   return (
     <header className="app-header">
       <nav className="app-header__nav">
+        {/* Ícone de voltar */}
+        <button
+          className="nav-link back-btn"
+          type="button"
+          onClick={() => navigate(-1)}
+          title="Voltar"
+        >
+          ← Voltar
+        </button>
+
         <NavLink to="/home" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
           🏠 Home
         </NavLink>
         <NavLink to="/pizza-config" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-          🍕 Montar Pedido
+          🍕 Pizza
         </NavLink>
         <NavLink to="/drinks-config" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
           🥤 Bebidas
         </NavLink>
+        {/* Botão Carrinho */}
+        <button
+          className="nav-link"
+          type="button"
+          onClick={() => navigate("/cart")}
+        >
+          🛒 Carrinho
+        </button>
         {!isLoggedIn && (
           <>
             <NavLink to="/register" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>

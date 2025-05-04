@@ -20,7 +20,8 @@
 }
 
 .app-header__nav a,
-.app-header__nav .logout-btn {
+.app-header__nav .logout-btn,
+.app-header__nav .nav-link {
   color: #e67e22;
   background: none;
   border: none;
@@ -44,7 +45,8 @@
 }
 
 .app-header__nav a:hover,
-.app-header__nav .logout-btn:hover {
+.app-header__nav .logout-btn:hover,
+.app-header__nav .nav-link:hover {
   color: #fff;
   background: #e67e22;
   box-shadow: 0 2px 8px rgba(230, 126, 34, 0.13);
@@ -71,8 +73,23 @@
     gap: 0.7em;
   }
   .app-header__nav a,
-  .app-header__nav .logout-btn {
+  .app-header__nav .logout-btn,
+  .app-header__nav .nav-link {
     font-size: 0.98rem;
     padding: 8px 14px;
   }
+}
+.back-btn {
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  color: #d35400;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 0 10px;
+  transition: color 0.2s;
+}
+.back-btn:hover {
+  color: #e67e22;
+  text-decoration: underline;
 }
