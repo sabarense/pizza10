@@ -2,7 +2,6 @@
 
 .welcome-root {
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
   display: flex;
   align-items: center;
   justify-content: center;
