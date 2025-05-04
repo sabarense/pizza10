@@ -109,3 +109,21 @@
   background: #f8cfa5;
   cursor: not-allowed;
 }
+
+/* --- Adicional para valor da pizza --- */
+.pizza-price-display {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  font-size: 1.2rem;
+  color: #7d5a38;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-highlight {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
