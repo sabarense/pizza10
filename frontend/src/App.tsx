@@ -8,6 +8,7 @@ import PizzaConfig from "./pages/PizzaConfig";
 import DrinksConfig from "./pages/DrinksConfig";
 import Payment from "./pages/Payment";
 import Welcome from "./components/Welcome";
+import Login from "./pages/Login";
 
 // Componente wrapper para acessar o hook useLocation fora do BrowserRouter
 const AppContent: React.FC = () => {
@@ -25,6 +26,7 @@ const AppContent: React.FC = () => {
           <Route path="/pizza-config" element={<PizzaConfig />} />
           <Route path="/drinks-config" element={<DrinksConfig />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       {!hideHeaderFooter && <Footer />}
