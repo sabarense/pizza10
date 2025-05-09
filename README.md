@@ -62,11 +62,3 @@ npm start <br>
 
 ---
 
-## Licença
-
-MIT
-
----
-
-> Dúvidas? Abra uma issue ou envie um e-mail para sabarensey@gmail.com
-
