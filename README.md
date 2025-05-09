@@ -13,7 +13,6 @@ Este é um sistema completo de pedidos de pizza e bebidas, com pagamento online 
 - Python 3.8+
 - pip
 - Stripe account (para testes)
-- Conta Uber Direct (para integração de entregas)
 
 ## Como rodar o projeto
 
@@ -32,7 +31,6 @@ cd backend <br>
 pip install -r requirements.txt <br>
 python app.py <br>
 
-
 ### 4. Instale e rode o frontend
 
 Abra outro terminal:
@@ -40,7 +38,6 @@ Abra outro terminal:
 cd frontend <br>
 npm install <br> 
 npm start <br>
-
 
 ### 5. Acesse
 
