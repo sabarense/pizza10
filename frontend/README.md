@@ -4,7 +4,7 @@ Este é o frontend React do sistema de delivery.
 
 ## Como rodar
 
-npm install
+npm install <br>
 npm start
 
 
