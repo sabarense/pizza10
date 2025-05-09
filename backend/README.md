@@ -14,11 +14,4 @@ Crie um arquivo `.env` com:
 STRIPE_SECRET_KEY=sua_chave_secreta_do_stripe <br>
 SECRET_KEY=um_segredo_qualquer
 
-## Endpoints principais
-
-- `/api/cart`
-- `/api/auth`
-- `/api/uber-direct/create-delivery`
-- `/api/payment-intent`
-
 ---
